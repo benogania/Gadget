@@ -48,7 +48,7 @@ const Nav = () => {
         className="hidden md:w-1/4 md:flex justify-center font-bold text-4xl "
       >
         <h1>
-          GADGY<span className="text-red-500">SHOP🔥</span>
+          GADGY<span className="text-red-500">SHOP</span>
         </h1>
       </Link>
 
