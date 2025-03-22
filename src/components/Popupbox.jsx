@@ -61,25 +61,28 @@ function Popupbox() {
   return (
     shoPopUP && (
       <div className="w-full h-full z-10 bg-[rgba(0,0,0,0.3)] flex place-items-center justify-center fixed  top-0 backdrop-filter-blur shadow-md">
-        <div className="  flex  w-[90%]  bg-white p-9 gap-5 rounded-xl md:w-1/2 h-1/2">
-          ``{" "}
-          <div className="w-[50%] flex justify-center place-items-center">
-            <img src={popData.img} className="w-full h-full object-contain" />
+        <div className="  flex  flex-col w-[90%]  bg-white p-9 gap-5 rounded-xl md:w-1/2 h-1/2">
+          {" "}
+          <div className="flex gap-9">
+          <div className="w-[150px]  flex justify-center place-items-center">
+            <img src={popData.img} className="w-full h-[100px] object-contain" />
           </div>
-          <div className="flex flex-col w-[50%] gap-5 h-full">
-            <h2 className=" text-3xl line-clamp-2  md:text-4xl">
+          <h2 className=" text-xl line-clamp-2  md:text-4xl">
               {popData.name}
             </h2>
-
-            <div className="flex justify-between place-items-center">
-              <img
-                src={`ratings/rating-${popData.rating * 10}.png`}
-                className="w-1/2 md:w-1/3"
-              />
-              <p>{popData.rating.toFixed(1)}</p>
             </div>
 
+          
+
+          <div className="flex flex-col w-full gap-5 h-full">
+            
+
+            <div className="flex justify-between place-items-center">
+            <p>{popData.rating.toFixed(1)}</p>
             <p>500k sold</p>
+              
+            </div>
+            
 
             <div className="flex justify-between">
               <div>

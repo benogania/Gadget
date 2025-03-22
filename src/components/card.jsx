@@ -30,7 +30,7 @@ function Card({ Image, Name, Price, Rating, Sold }) {
   }
 
   return (
-    <div className="w-56 h-[350px] shadow-xl p-5 border mt-5 bg-white ">
+    <div className="w-full  rounded-md max-w-[230px] h-[350px] shadow-xl p-5 border mt-5 bg-white ">
       <div className="h-40 flex justify-center place-items-center">
         <img className="w-full h-full object-contain" src={Image} />
       </div>

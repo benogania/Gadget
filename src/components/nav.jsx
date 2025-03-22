@@ -42,18 +42,18 @@ const Nav = () => {
   }
 
   return (
-    <div className=" shadow-md  w-full h-28 flex p-10 place-items-center justify-between  bg-white">
+    <div className=" shadow-md  w-full h-28 flex place-items-center justify-between  bg-white">
       <Link
         to={"/"}
-        className="hidden md:w-1/4 md:flex justify-center font-bold text-4xl "
+        className="hidden justify-center font-bold text-4xl md:w-1/4 xl:flex  "
       >
         <h1>
           GADGY<span className="text-red-500">SHOP🔥</span>
         </h1>
       </Link>
 
-      <div className="w-full flex justify-center md:w-1/2">
-        <div className="w-[100%] flex justify-between text-black rounded-3xl overflow-hidden border border-[rgba(0,0,0,0.3)] shadow-sm bg-red">
+      <div className="w-full px-3 flex justify-between place-items-center xl:w-1/2">
+        <div className="w-[80%] flex justify-between text-black rounded-3xl overflow-hidden border border-[rgba(0,0,0,0.3)] shadow-sm bg-red">
           <input
             className="w-[100%] h-12 px-4 outline-none"
             placeholder="Search product"
@@ -71,7 +71,7 @@ const Nav = () => {
           <div
             className={
               showsearch
-                ? " px-6  py-2 shadow-lg  w-1/3 h-16 bg-gray-100 absolute top-20 left-1/3 border"
+                ? " px-6  py-2 shadow-lg  w-[80%] h-16 bg-gray-100 absolute top-20  border"
                 : "hidden"
             }
             ref={changealue}
@@ -79,9 +79,14 @@ const Nav = () => {
             Searching for...
           </div>
         </div>
+        <div>
+          <i className="bi bi-list text-4xl md:hidden"></i>
+        </div>
       </div>
+     
       <p></p>
-      <div className="flex place-items-center justify-center gap-10 w-1/4">
+
+      <div className="hidden lg:flex place-items-center justify-center gap-10 w-1/4">
       <Link to={"/cart"}>
         <div
           className="hidden  md:relative md:inline-block "
@@ -141,7 +146,7 @@ const Nav = () => {
             <i className=" bibi bi-person-circle text-xl"></i>
           </button>
         </Link>
-        <i className="inline-block bi bi-list text-4xl cursor-pointer md:hidden"></i>
+  
       </div>
     </div>
   );
